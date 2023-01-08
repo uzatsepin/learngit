@@ -1,0 +1,95 @@
+.engine {
+  @include backgrounds-img(url("../../img/engine-bg.jpeg"));
+  height: 100vh;
+  margin-top: 150px;
+  @include tablet {
+    margin-top: 100px;
+    height: 600px;
+  }
+  @include big-mobile {
+    margin-top: 20px;
+    height: 773px;
+    @include backgrounds-img(url("../../img/engine-mobile.jpeg"));
+  }
+
+  &__wrapper {
+    position: relative;
+    height: 100vh;
+    @include tablet {
+      height: 600px;
+    }
+    @include big-mobile {
+      height: 773px;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    @include big-mobile {
+      position: static;
+      transform: unset;
+      padding-top: 30px;
+    }
+  }
+
+  &__title {
+    color: $white;
+    @include tablet {
+      max-width: 250px;
+    }
+  }
+
+  &__descr {
+    color: $white;
+    margin-top: 20px;
+    @include tablet {
+      margin-top: 10px;
+      max-width: 360px;
+    }
+    @include big-mobile {
+      max-width: 343px;
+    }
+  }
+
+  &__inner {
+    margin-top: 60px;
+    display: flex;
+    gap: 0 80px;
+    @include tablet {
+      margin-top: 25px;
+      flex-wrap: wrap;
+      gap: 30px 63px;
+    }
+    @include big-mobile {
+      display: flex;
+    }
+  }
+
+  &__item {
+    max-width: 129px;
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: $white;
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+
+  &__item-descr {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: $white;
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+}

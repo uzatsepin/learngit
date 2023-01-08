@@ -1,0 +1,54 @@
+.effective {
+  @include backgrounds-img(url("../../img/effective-bg.jpeg"));
+  height: 100vh;
+  @include tablet {
+    height: 404px;
+  }
+  @include mobile {
+    height: 730px;
+  }
+
+  &__wrapper {
+    position: relative;
+    height: 100vh;
+    @include tablet {
+      height: 404px;
+    }
+    @include mobile {
+      height: 730px;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @include mobile {
+      position: static;
+      transform: unset;
+      padding-top: 20px;
+    }
+  }
+
+  &__title {
+    color: $white;
+    @include sm-desktop {
+      max-width: 416px;
+    }
+    @include tablet {
+      max-width: 290px;
+    }
+  }
+
+  &__descr {
+    color: $white;
+    margin-top: 20px;
+    max-width: 580px;
+    @include sm-desktop {
+      max-width: 416px;
+    }
+    @include tablet {
+      max-width: 304px;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.body {
+  @include backgrounds-img(url("../../img/body-bg.jpeg"));
+  height: fit-content;
+  padding-bottom: 120px;
+  @include tablet {
+    padding-bottom: 60px;
+  }
+
+  &__text {
+    padding-top: 101px;
+    max-width: 724px;
+    margin: 0 auto;
+    @include tablet {
+      padding-top: 50px;
+    }
+  }
+
+  &__title {
+    color: $white;
+    text-align: center;
+    @include tablet {
+      max-width: 349px;
+      margin: 0 auto;
+    }
+    @include big-mobile {
+      text-align: left;
+      margin: 0;
+    }
+  }
+
+  &__descr {
+    color: $white;
+    text-align: center;
+    margin-top: 20px;
+    @include tablet {
+      max-width: 444px;
+      margin: 10px auto 0 auto;
+    }
+    @include big-mobile {
+      text-align: left;
+      margin: 10px 0 0 0;
+    }
+  }
+
+  &__wrapper {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 100px;
+    align-items: center;
+    @include tablet {
+      margin-top: 59px;
+    }
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+    @include mobile {
+      grid-row-gap: 40px;
+      grid-column-gap: 20px;
+    }
+  }
+
+  &__item img {
+    display: block;
+    margin: 0 auto;
+    @include tablet {
+      height: 100px;
+      width: 100px;
+    }
+    @include big-mobile {
+      margin: 0;
+    }
+  }
+
+  &__item-title {
+    margin-top: 30px;
+    text-align: center;
+    color: $white;
+    font-size: 24px;
+    font-weight: 700;
+    @include tablet {
+      font-size: 14px;
+    }
+    @include big-mobile {
+      text-align: left;
+    }
+    @include mobile {
+      margin-top: 10px;
+    }
+  }
+
+  &__item-descr {
+    color: $white;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    @include tablet {
+      font-size: 12px;
+      margin-top: 5px;
+    }
+    @include big-mobile {
+      text-align: left;
+    }
+    @include mobile {
+      font-size: 10px;
+    }
+  }
+}

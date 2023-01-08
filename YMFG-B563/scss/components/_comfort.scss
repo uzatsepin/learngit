@@ -1,0 +1,50 @@
+.comfort {
+  margin: 130px 0;
+  @include tablet {
+    margin: 80px 0 26px 0;
+  }
+
+  &__title {
+    text-align: center;
+    @include mobile {
+      text-align: left;
+      max-width: 330px;
+    }
+  }
+
+  &__wrapper {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    @include tablet {
+      margin-top: 30px;
+      grid-column-gap: 3px;
+      grid-row-gap: 3px;
+    }
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__item:first-child {
+    grid-area: 1 / 1 / 3 / 2;
+  }
+
+  &__item img {
+    width: 100%;
+    max-width: 530px;
+    height: auto;
+    @include sm-desktop {
+      max-width: 398px;
+    }
+    @include tablet {
+      max-width: 238px;
+    }
+    @include mobile {
+      max-width: 343px;
+    }
+  }
+}

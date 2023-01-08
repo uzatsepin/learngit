@@ -1,0 +1,45 @@
+.regen {
+  margin-top: 150px;
+  @include big-mobile {
+    margin-top: 46px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet {
+      align-items: unset;
+    }
+    @include big-mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__items-text {
+    margin: 0 auto;
+  }
+
+  &__items-title {
+    max-width: 387px;
+  }
+
+  &__items-descr {
+    margin-top: 20px;
+    max-width: 740px;
+    padding-right: 10px;
+  }
+
+  &__img {
+    width: 50%;
+    max-width: 740px;
+    height: auto;
+    @include tablet {
+      max-width: 360px;
+    }
+    @include big-mobile {
+      width: 100%;
+      margin: 20px auto 0 auto;
+    }
+  }
+}

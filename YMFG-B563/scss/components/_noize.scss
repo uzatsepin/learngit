@@ -1,0 +1,56 @@
+.noize {
+  @include backgrounds-img(url("../../img/noize-bg.jpeg"));
+  height: 100vh;
+  @include tablet {
+    height: 418px;
+  }
+  @include mobile {
+    height: 775px;
+    background-position: 17% 50%;
+  }
+
+  &__wrapper {
+    position: relative;
+    height: 100vh;
+    @include tablet {
+      height: 418px;
+    }
+    @include mobile {
+      height: 775px;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 23%;
+    transform: translateY(-50%);
+    left: 51%;
+    @include tablet {
+      top: 25%;
+    }
+    @include big-mobile {
+      top: unset;
+      bottom: 0;
+    }
+    @include mobile {
+      position: static;
+      transform: unset;
+      padding-top: 50px;
+    }
+  }
+
+  &__title {
+    color: $white;
+    max-width: 331px;
+  }
+
+  &__descr {
+    color: $white;
+    max-width: 740px;
+    margin-top: 20px;
+    @include tablet {
+      max-width: 360px;
+      margin-top: 15px;
+    }
+  }
+}
