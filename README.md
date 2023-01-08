@@ -2,12 +2,12 @@
 
 See branch for select page, what u want
 
-## MVFG-M281 – YUNMAI Massage Gun Extra Mini Pink
+MVFG-M281 – YUNMAI Massage Gun Extra Mini Pink <br>
 
-## YMFG-M352 – YUNMAI Massage Gun Mini
+YMFG-M352 – YUNMAI Massage Gun Mini <br>
 
-## YMFG-B563 – YUNMAI Massage Gun PRO
+YMFG-B563 – YUNMAI Massage Gun PRO <br>
 
-## YMJM-420T – YUNMAI Massage Gun SC
+YMJM-420T – YUNMAI Massage Gun SC <br>
 
-## MFG-B453 – YUNMAI Massage Gun SE
+YMFG-B453 – YUNMAI Massage Gun SE <br>
