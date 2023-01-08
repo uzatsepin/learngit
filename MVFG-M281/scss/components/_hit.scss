@@ -1,0 +1,44 @@
+.hit {
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include big-mobile {
+      flex-direction: column-reverse;
+    }
+  }
+  &__items-title {
+    color: $mainColor;
+    padding-left: 125px;
+    padding-right: 80px;
+    @include sm-desktop {
+      padding-left: 110px;
+    }
+    @include middle {
+      padding-left: 70px;
+    }
+    @include tablet {
+      padding-left: 0;
+      padding-right: 15px;
+    }
+    @include big-mobile {
+      padding: 0;
+      padding-top: 20px;
+      text-align: center;
+    }
+  }
+  &__img {
+    width: 50%;
+    max-width: 820px;
+    height: auto;
+    @include sm-desktop {
+      max-width: 610px;
+    }
+    @include tablet {
+      max-width: 360px;
+    }
+    @include big-mobile {
+      width: unset;
+    }
+  }
+}

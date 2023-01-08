@@ -1,0 +1,61 @@
+.format {
+  margin: 150px 0 90px 0;
+  @include tablet {
+    margin: 120px 0 223px 0;
+  }
+  @include mobile {
+    margin: 120px 0 210px 0;
+  }
+  &__title {
+    color: $mainColor;
+    text-align: center;
+    @include tablet {
+      font-size: 24px;
+    }
+  }
+  &__wrapper {
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    @include sm-desktop {
+      margin-top: 30px;
+    }
+    @include tablet {
+      margin-top: 30px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+    }
+    @include mobile {
+      gap: 30px 5px;
+    }
+  }
+  &__item-descr {
+    max-width: fit-content;
+    color: $mainColor;
+    margin: 20px auto 0 auto;
+    @include sm-desktop {
+      margin: 10px auto 0 auto;
+      font-size: 16px;
+    }
+  }
+  &__img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    @include sm-desktop {
+      max-width: 266px;
+      margin-top: 0;
+    }
+    @include mobile {
+      max-width: 164px;
+    }
+  }
+}
+
+.special {
+  max-width: 194px;
+  @include sm-desktop {
+    max-width: 173px;
+  }
+}
