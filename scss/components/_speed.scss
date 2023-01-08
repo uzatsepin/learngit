@@ -1,0 +1,78 @@
+.speed {
+  @include backgrounds-img(url("../../img/speed-bg.jpeg"));
+  height: 100vh;
+  position: relative;
+  @include sm-desktop {
+    height: 900px;
+  }
+  @include tablet {
+    height: 704px;
+  }
+  @include big-mobile {
+    position: static;
+    height: unset;
+    background-image: unset;
+    background-color: $backgroundSpeed;
+    padding: 50px 0;
+  }
+
+  &__wrapper {
+    position: relative;
+    height: 1008px;
+    @include sm-desktop {
+      height: 900px;
+    }
+    @include tablet {
+      height: 704px;
+    }
+    @include big-mobile {
+      position: static;
+      height: unset;
+      //display: flex;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @include big-mobile {
+      position: static;
+      transform: unset;
+    }
+  }
+
+  &__title {
+    @include tablet {
+      max-width: 189px;
+    }
+    @include big-mobile {
+      max-width: 343px;
+    }
+  }
+
+  &__descr {
+    max-width: 590px;
+    margin-top: 10px;
+    @include sm-desktop {
+      max-width: 451px;
+    }
+    @include tablet {
+      max-width: 208px;
+    }
+    @include big-mobile {
+      max-width: 343px;
+    }
+  }
+
+  &__img {
+    display: none;
+    @include big-mobile {
+      display: block;
+      width: 100%;
+      max-width: 565px;
+      height: auto;
+      margin-top: 40px;
+    }
+  }
+}

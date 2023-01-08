@@ -1,0 +1,39 @@
+.nozzles-descr {
+  @include backgrounds-img(url("../../img/nozzles-descr-bg.jpeg"));
+
+  &__text {
+    padding: 165px 0;
+    @include tablet {
+      padding: 70px 0;
+    }
+    @include mobile {
+      padding: 30px 0;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    color: $white;
+    max-width: 512px;
+    margin: 0 auto;
+    @include tablet {
+      max-width: 384px;
+    }
+    @include mobile {
+      text-align: left;
+    }
+  }
+
+  &__descr {
+    max-width: 725px;
+    margin: 20px auto 0 auto;
+    color: $white;
+    text-align: center;
+    @include tablet {
+      max-width: 484px;
+    }
+    @include mobile {
+      text-align: left;
+    }
+  }
+}

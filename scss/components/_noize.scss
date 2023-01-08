@@ -1,0 +1,72 @@
+.noize {
+  @include backgrounds-img(url("../../img/noize-bg.jpeg"));
+  height: 100vh;
+  @include tablet {
+    height: 379px;
+  }
+  @include big-mobile {
+    height: unset;
+    background-image: unset;
+    background-color: $backgroundIntellect;
+    padding: 50px 0;
+  }
+
+  &__wrapper {
+    position: relative;
+    height: 100vh;
+    @include tablet {
+      height: 379px;
+    }
+    @include big-mobile {
+      position: static;
+      height: unset;
+    }
+  }
+
+  &__text {
+    max-width: 740px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @include big-mobile {
+      position: static;
+      transform: unset;
+      max-width: 343px;
+    }
+  }
+
+  &__title {
+    color: $white;
+    max-width: 724px;
+    @include big-mobile {
+      max-width: 343px;
+      color: $mainColor;
+    }
+  }
+
+  &__descr {
+    margin-top: 25px;
+    color: $white;
+    @include sm-desktop {
+      max-width: 570px;
+    }
+    @include tablet {
+      max-width: 360px;
+    }
+    @include big-mobile {
+      max-width: 343px;
+      color: $mainColor;
+    }
+  }
+
+  &__img {
+    display: none;
+    @include big-mobile {
+      display: block;
+      width: 100%;
+      max-width: 565px;
+      height: auto;
+      margin-top: 88px;
+    }
+  }
+}

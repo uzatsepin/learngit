@@ -1,0 +1,71 @@
+.ergonomic {
+  @include tablet {
+    padding: 50px 0;
+  }
+  @include big-mobile {
+    padding: 50px 15px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    @include big-mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__descr {
+    margin-top: 20px;
+    max-width: 740px;
+    @include sm-desktop {
+      max-width: 570px;
+    }
+    @include tablet {
+      max-width: 360px;
+    }
+    @include big-mobile {
+      max-width: 343px;
+      margin-top: 10px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    margin-top: 38px;
+    gap: 0 60px;
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 40px 90px;
+      margin-top: 20px;
+    }
+    @include big-mobile {
+      gap: 20px 45px;
+    }
+  }
+
+  &__item-descr {
+    font-size: 14px;
+    margin-top: 15px;
+    @include sm-desktop {
+      max-width: 130px;
+    }
+  }
+
+  &__img {
+    width: 50%;
+    max-width: 930px;
+    height: auto;
+    @include sm-desktop {
+      max-width: 707px;
+    }
+    @include tablet {
+      max-width: 334px;
+    }
+    @include big-mobile {
+      width: 100%;
+      max-width: 565px;
+    }
+  }
+}

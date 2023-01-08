@@ -1,0 +1,90 @@
+.engine {
+  @include backgrounds-img(url("../../img/engine-bg.jpeg"));
+  height: 100vh;
+  @include sm-desktop {
+    height: 711px;
+  }
+  @include tablet {
+    height: 440px;
+  }
+  @include big-mobile {
+    height: 770px;
+    padding-top: 30px;
+    @include backgrounds-img(url("../../img/engine-375.jpeg"));
+  }
+
+  &__wrapper {
+    position: relative;
+    height: 100vh;
+    @include sm-desktop {
+      height: 711px;
+    }
+    @include tablet {
+      height: 440px;
+    }
+    @include big-mobile {
+      height: 770px;
+      position: static;
+    }
+  }
+
+  &__text {
+    max-width: 661px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @include tablet {
+      max-width: 360px;
+    }
+    @include big-mobile {
+      position: static;
+      transform: unset;
+    }
+  }
+
+  &__title {
+    color: $white;
+    @include sm-desktop {
+      max-width: 456px;
+    }
+  }
+
+  &__descr {
+    color: $white;
+    margin-top: 20px;
+    @include sm-desktop {
+      max-width: 570px;
+    }
+  }
+
+  &__info {
+    margin-top: 60px;
+    display: flex;
+    gap: 80px;
+    @include tablet {
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: $white;
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+
+  &__item-descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: $white;
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+}

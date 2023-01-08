@@ -1,0 +1,49 @@
+@import "./mixin/breakpoints";
+@import "vars";
+
+* {
+  font-family: Gotham Pro, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+  line-height: 130%;
+  padding: 0;
+  @include tablet {
+    font-size: 14px;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  color: $mainColor;
+  @include tablet {
+    font-size: 24px;
+  }
+}
+
+.descr {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: $mainColor;
+  @include tablet {
+    font-size: 14px;
+  }
+}
+
+.container {
+  max-width: 1490px;
+  padding: 0 15px;
+  margin: 0 auto;
+  @include sm-desktop {
+    max-width: 1170px;
+  }
+  @include tablet {
+    max-width: 698px;
+  }
+  @include mobile {
+    max-width: 345px;
+  }
+}

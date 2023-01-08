@@ -1,0 +1,77 @@
+.nozzles {
+  background: rgb(33, 33, 33);
+  background: linear-gradient(
+    90deg,
+    rgba(33, 33, 33, 1) 50%,
+    rgba(46, 46, 46, 1) 50%
+  );
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    @include big-mobile {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 82px;
+    padding-bottom: 98px;
+    background-color: #2e2e2e;
+    @include tablet {
+      padding: 30px 18px;
+    }
+
+    img {
+      @include tablet {
+        height: 68px;
+        width: 39px;
+      }
+    }
+  }
+
+  &__item:nth-child(1) {
+    background-color: #212121;
+  }
+
+  &__item:nth-child(3) {
+    background-color: #212121;
+    @include big-mobile {
+      background-color: #2e2e2e;
+    }
+  }
+
+  &__item:nth-child(4) {
+    @include big-mobile {
+      background-color: #212121;
+    }
+  }
+
+  &__title {
+    color: $white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    @include tablet {
+      font-size: 14px;
+      margin-top: 25px;
+    }
+  }
+
+  &__descr {
+    color: $white;
+    max-width: 232px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    @include tablet {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+  }
+}

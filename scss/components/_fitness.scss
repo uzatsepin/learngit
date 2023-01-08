@@ -1,0 +1,96 @@
+.fitness {
+  background-color: $backgroundFitness;
+  @include big-mobile {
+    padding-top: 50px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    @include big-mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    margin-left: 75px;
+    @include sm-desktop {
+      margin-left: 50px;
+    }
+    @include tablet {
+      margin-left: 20px;
+    }
+  }
+
+  &__descr {
+    margin-top: 20px;
+    max-width: 740px;
+    color: $white;
+    @include sm-desktop {
+      max-width: 570px;
+    }
+    @include big-mobile {
+      max-width: 343px;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    color: $white;
+    @include sm-desktop {
+      max-width: 568px;
+    }
+    @include big-mobile {
+      max-width: 342px;
+      margin: 0 auto;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    gap: 80px;
+    margin-top: 60px;
+    @include sm-desktop {
+      flex-wrap: wrap;
+      gap: 30px 80px;
+    }
+    @include tablet {
+      gap: 20px 60px;
+      margin-top: 20px;
+    }
+    @include big-mobile {
+      max-width: 351px;
+      margin: 20px auto 0 auto;
+    }
+  }
+
+  &__item-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: $white;
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+
+  &__item-descr {
+    font-size: 14px;
+    color: $white;
+  }
+
+  &__img {
+    width: 50%;
+    max-width: 899px;
+    height: auto;
+    @include sm-desktop {
+      max-width: 680px;
+    }
+    @include big-mobile {
+      margin-top: 50px;
+      width: 100%;
+      max-width: fit-content;
+    }
+  }
+}
