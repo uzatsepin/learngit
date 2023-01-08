@@ -1,0 +1,30 @@
+.battery {
+  margin-top: 150px;
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    @include big-mobile {
+      flex-direction: column-reverse;
+    }
+  }
+  &__items-title {
+    max-width: 520px;
+    margin: 0 auto;
+    @include tablet {
+      max-width: 303px;
+    }
+    @include big-mobile {
+      max-width: 343px;
+    }
+  }
+  &__img {
+    width: 50%;
+    max-width: 820px;
+    height: auto;
+    @include big-mobile {
+      width: 100%;
+    }
+  }
+}

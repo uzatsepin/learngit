@@ -1,0 +1,51 @@
+.nozzle {
+  margin-top: 150px;
+  @include big-mobile {
+    margin-top: 300px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    @include big-mobile {
+      flex-direction: column-reverse;
+    }
+  }
+  &__items-text {
+    padding-right: 166px;
+    padding-left: 10px;
+    @include tablet {
+      padding-right: 18px;
+      padding-left: 30px;
+    }
+    @include big-mobile {
+      padding: 0;
+    }
+  }
+  &__items-title {
+    max-width: 365px;
+  }
+  &__items-descr {
+    max-width: 428px;
+    margin-top: 20px;
+    line-height: 200%;
+    @include tablet {
+      font-size: 16px;
+      max-width: 312px;
+    }
+    @include big-mobile {
+      max-width: 335px;
+      line-height: 130%;
+      font-size: 14px;
+    }
+  }
+  &__img {
+    width: 50%;
+    max-width: 820px;
+    height: auto;
+    @include big-mobile {
+      width: 100%;
+    }
+  }
+}

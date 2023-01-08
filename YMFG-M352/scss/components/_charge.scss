@@ -1,0 +1,37 @@
+.charge {
+  margin-top: 130px;
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include big-mobile {
+      flex-direction: column-reverse;
+      align-items: unset;
+    }
+  }
+  &__items-text {
+    max-width: 520px;
+    margin: 0 auto;
+    @include tablet {
+      max-width: 320px;
+    }
+    @include big-mobile {
+      margin: 10px 0 0 0;
+      max-width: 343px;
+    }
+  }
+  &__items-descr {
+    margin-top: 20px;
+    @include big-mobile {
+      margin-top: 10px;
+    }
+  }
+  &__img {
+    width: 50%;
+    max-width: 820px;
+    height: auto;
+    @include big-mobile {
+      width: 100%;
+    }
+  }
+}

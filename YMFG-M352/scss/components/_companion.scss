@@ -1,0 +1,48 @@
+.companion {
+  margin-top: 266px;
+  @include tablet {
+    margin-top: 120px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include big-mobile {
+      flex-direction: column-reverse;
+    }
+  }
+  &__items-text {
+    max-width: 464px;
+    margin: 0 auto;
+    padding-right: 10px;
+    @include tablet {
+      padding-right: 25px;
+    }
+  }
+  &__items-title {
+    color: $mainColor;
+    @include tablet {
+      max-width: 210px;
+    }
+    @include big-mobile {
+      margin-top: 20px;
+    }
+  }
+  &__items-descr {
+    margin-top: 20px;
+    @include tablet {
+      font-size: 14px;
+    }
+    @include big-mobile {
+      margin-top: 10px;
+    }
+  }
+  &__img {
+    width: 50%;
+    max-width: 820px;
+    height: auto;
+    @include big-mobile {
+      width: 100%;
+    }
+  }
+}

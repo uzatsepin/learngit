@@ -1,0 +1,19 @@
+@import 'normalize';
+@import 'settings';
+@import 'vars';
+@import 'fonts';
+@import './mixin/backgrounds';
+@import './mixin/breakpoints';
+
+@import "components/hero";
+@import "components/char";
+@import "components/companion";
+@import "components/weight";
+@import "components/power";
+@import "components/nozzle";
+@import "components/heads";
+@import "components/battery";
+@import "components/charge";
+@import "components/format";
+
+
