@@ -1,0 +1,124 @@
+.design {
+  height: 1008px;
+  background-color: $black;
+  position: relative;
+  @include sm-desktop {
+    height: 760px;
+  }
+  @include tablet {
+    height: 408px;
+  }
+  @include small-tablet {
+    height: 680px;
+  }
+  @include big-mobile {
+    height: 787px;
+  }
+
+  &__content {
+    position: relative;
+    height: 1008px;
+    @include sm-desktop {
+      height: 760px;
+    }
+    @include tablet {
+      height: 408px;
+    }
+    @include small-tablet {
+      height: 680px;
+    }
+    @include big-mobile {
+      height: 787px;
+    }
+  }
+
+  &__inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @include small-tablet {
+      top: 30%;
+    }
+  }
+
+  &__title {
+    color: $white;
+  }
+
+  &__descr {
+    color: $white;
+    margin-top: 20px;
+    max-width: 608px;
+    @include sm-desktop {
+      max-width: 458px;
+    }
+    @include tablet {
+      margin-top: 15px;
+      max-width: 353px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    margin-top: 60px;
+    gap: 0 70px;
+    @include tablet {
+      gap: 0 40px;
+      margin-top: 79px;
+    }
+    @include big-mobile {
+      margin-top: 22px;
+      gap: 20px 80px;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item-descr {
+    color: $white;
+    margin-top: 10px;
+    max-width: 116px;
+    text-align: center;
+    font-size: 14px;
+    @include tablet {
+      font-size: 12px;
+      max-width: 99px;
+    }
+    @include big-mobile {
+      text-align: left;
+    }
+  }
+
+  &__item-img {
+    display: block;
+    max-width: 61px;
+    margin: 0 auto;
+    @include big-mobile {
+      margin: 0;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    left: 70%;
+    transform: translateX(-50%);
+    width: 50%;
+    max-width: 959px;
+    height: auto;
+    @include sm-desktop {
+      max-width: 723px;
+    }
+    @include tablet {
+      width: 100%;
+      max-width: 357px;
+      top: unset;
+      bottom: 0;
+      left: 70%;
+    }
+    @include small-tablet {
+      top: unset;
+      bottom: 0;
+      left: 50%;
+    }
+  }
+}

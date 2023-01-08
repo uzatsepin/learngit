@@ -1,0 +1,65 @@
+.effective {
+  @include backgrounds-img(url("../../img/effective-bg.jpeg"));
+  height: 100vh;
+  @include tablet {
+    height: 404px;
+  }
+  @include big-mobile {
+    height: unset;
+    background-image: unset;
+    background-color: #6f5541;
+  }
+
+  &__wrapper {
+    position: relative;
+    height: 100vh;
+    @include tablet {
+      height: 404px;
+    }
+    @include big-mobile {
+      height: unset;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @include mobile {
+      position: static;
+      transform: unset;
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__title {
+    color: $white;
+    @include sm-desktop {
+      max-width: 580px;
+    }
+    @include tablet {
+      max-width: 290px;
+    }
+  }
+
+  &__descr {
+    color: $white;
+    margin-top: 20px;
+    max-width: 580px;
+    @include sm-desktop {
+      max-width: 570px;
+    }
+    @include tablet {
+      max-width: 304px;
+    }
+  }
+
+  &__img {
+    display: none;
+    @include big-mobile {
+      display: block;
+    }
+  }
+}

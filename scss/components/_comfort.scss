@@ -1,0 +1,42 @@
+.comfort {
+  margin: 130px 0;
+  @include tablet {
+    margin: 80px 0 26px 0;
+  }
+
+  &__title {
+    text-align: center;
+    @include big-mobile {
+      text-align: left;
+      max-width: 330px;
+    }
+  }
+
+  &__wrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 76px 0;
+  }
+
+  &__item img {
+    width: 100%;
+    max-width: 933px;
+    height: auto;
+
+    @include sm-desktop {
+      max-width: 580px;
+    }
+    @include tablet {
+      max-width: 340px;
+    }
+    @include big-mobile {
+      max-width: 185px;
+    }
+    @include mobile {
+      max-width: 172px;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.engine {
+  @include backgrounds-img(url("../../img/engine-bg.jpeg"));
+  height: 100vh;
+  margin-top: 150px;
+  @include tablet {
+    margin-top: 100px;
+    height: 600px;
+  }
+  @include big-mobile {
+    margin-top: 20px;
+    height: 773px;
+    @include backgrounds-img(url("../../img/engine-mobile.jpeg"));
+  }
+
+  &__wrapper {
+    position: relative;
+    height: 100vh;
+    @include tablet {
+      height: 600px;
+    }
+    @include big-mobile {
+      height: 773px;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 49%;
+    @include big-mobile {
+      position: static;
+      transform: unset;
+      padding-top: 30px;
+    }
+  }
+
+  &__title {
+    color: $white;
+    @include tablet {
+      max-width: 360px;
+      font-size: 22px;
+    }
+  }
+
+  &__descr {
+    color: $white;
+    margin-top: 20px;
+    @include tablet {
+      margin-top: 10px;
+      max-width: 360px;
+    }
+    @include big-mobile {
+      max-width: 343px;
+    }
+  }
+
+  &__inner {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px 20px;
+    }
+  }
+
+  &__item {
+    max-width: 434px;
+    @include tablet {
+      max-width: 231px;
+      &:nth-child(1) {
+        max-width: 128px;
+      }
+      &:nth-child(2) {
+        max-width: 152px;
+      }
+    }
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: $white;
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+
+  &__item-descr {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: $white;
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+}

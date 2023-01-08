@@ -1,0 +1,105 @@
+.battery {
+  @include backgrounds-img(url('../../img/battery-bg.jpeg'));
+  height: 100vh;
+  position: relative;
+  z-index: 999;
+  @include tablet {
+    height: 428px;
+  }
+
+  @include big-mobile {
+    background-image: none;
+    position: static;
+    height: unset;
+    background-color: $backgroundBattery;
+    padding: 30px 0 20px 0;
+  }
+
+  &__wrapper {
+    position: relative;
+    height: 100vh;
+    @include tablet {
+      height: 428px;
+    }
+    @include big-mobile {
+      height: unset;
+      position: static;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @include big-mobile {
+      position: static;
+      transform: unset;
+    }
+    @include mobile {
+      position: static;
+      transform: unset;
+      padding-top: 30px;
+    }
+  }
+
+  &__title {
+    color: $white;
+  }
+
+  &__descr {
+    color: $white;
+    margin-top: 20px;
+    max-width: 666px;
+    @include tablet {
+      max-width: 360px;
+    }
+  }
+
+  &__inner {
+    margin-top: 60px;
+    display: flex;
+    gap: 0 80px;
+    @include tablet {
+      flex-wrap: wrap;
+      margin-top: 32px;
+      max-width: 360px;
+      gap: 20px 40px;
+    }
+    @include mobile {
+      gap: 30px 70px;
+    }
+  }
+
+  &__item {
+    max-width: 131px;
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: $white;
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+
+  &__item-descr {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    color: $white;
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+  &__img {
+    display: none;
+    @include big-mobile {
+      display: block;
+      margin-top: 30px;
+      width: 100%;
+      max-width: 499px;
+      height: auto;
+    }
+  }
+}
